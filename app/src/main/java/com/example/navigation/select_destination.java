@@ -2,6 +2,7 @@ package com.example.navigation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,6 +29,8 @@ public class select_destination extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                         String item = String.valueOf(parent.getItemAtPosition(i));//클릭한 위치의 des values
                         Toast.makeText(select_destination.this, item, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(select_destination.this,load_navigation.class);//목적지 선택 시 길안내 페이지로 이동
+                        startActivity(intent);
                     }
                 }
 
