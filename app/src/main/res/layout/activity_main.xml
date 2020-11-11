@@ -8,8 +8,8 @@
 
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
@@ -17,7 +17,7 @@
 
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/findBeacon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -25,7 +25,7 @@
             android:text="비콘 탐색중" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/goNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="수신 시 다음 인탠드"
